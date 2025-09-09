@@ -1,12 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary: #000;
+  --secondary: rgb(24 24 27);
+  --border: rgba(63, 63, 70, 0.4);
 }
 
 .light {
   --primary: #fff;
+  color: #000;
 }
 
 body {
-  background-color: var(--primary) !important;
+  background-color: var(--primary);
   transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.container {
+  border: 2px solid var(--border);
+  width: 80%;
+  margin: auto;
+  background-color: var(--secondary);
+}
+
+.divider {
+  border-bottom: 1px solid var(--border);
+  margin: 3rem 0;
 }
