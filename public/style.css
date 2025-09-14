@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?mvswfr');
-  src:  url('fonts/icomoon.eot?mvswfr#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?mvswfr') format('truetype'),
-    url('fonts/icomoon.woff?mvswfr') format('woff'),
-    url('fonts/icomoon.svg?mvswfr#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ba1tkn');
+  src:  url('fonts/icomoon.eot?ba1tkn#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ba1tkn') format('truetype'),
+    url('fonts/icomoon.woff?ba1tkn') format('woff'),
+    url('fonts/icomoon.svg?ba1tkn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,15 +25,42 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-link:before {
+  content: "\e903";
+}
 .icon-menu:before {
   content: "\e900";
+}
+.icon-sun:before {
+  content: "\e904";
 }
 .icon-clear:before {
   content: "\e901";
 }
+.icon-clear:before {
+  content: "\e901";
+}
+.icon-verified:before {
+  content: "\e905";
+}
+.icon-social-linkedin:before {
+  content: "\e906";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+.icon-long-arrow-right:before {
+  content: "\f178";
+}
 .icon-moon-o:before {
   content: "\f186";
-}
-.icon-volume:before {
-  content: "\e902";
 }
