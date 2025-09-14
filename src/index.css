@@ -21,6 +21,7 @@ html {
   --subTitle: rgb(161 161 170);
   --bgHeader: rgb(39 39 42);
   --blue: #0084ff;
+  --shadowG: 1px 1px 40px rgba(20, 114, 221, 0.26);
 }
 
 .light {
@@ -39,6 +40,7 @@ body {
   width: 80%;
   margin: auto;
   background-color: var(--secondary);
+  padding: 0 4.4rem;
 }
 
 .divider {
@@ -63,4 +65,19 @@ a {
 button {
   all: unset;
   cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 1.2rem;
+  }
 }
