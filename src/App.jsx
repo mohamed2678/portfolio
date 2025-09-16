@@ -1,13 +1,14 @@
 /* eslint-disable no-unused-vars */
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
-import Main from "./components/main/Main";
-import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import Main from "./components/Main/Main";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="container">
+      
       <Header />
       <Hero />
       <div className="divider" />
