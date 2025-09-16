@@ -22,6 +22,8 @@ html {
   --bgHeader: rgb(39 39 42);
   --blue: #0084ff;
   --shadowG: 1px 1px 40px rgba(20, 114, 221, 0.26);
+
+  --containerpadding: 4.4rem;
 }
 
 .light {
@@ -40,12 +42,14 @@ body {
   width: 80%;
   margin: auto;
   background-color: var(--secondary);
-  padding: 0 4.4rem;
+  padding: 0 var(--containerpadding);
 }
 
 .divider {
   border-bottom: 1px solid var(--border);
   margin: 3rem 0;
+  width: calc(100% + var(--containerpadding) + var(--containerpadding));
+  margin-left: calc(-1 * var(--containerpadding));
 }
 
 li {
@@ -55,6 +59,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.3s ease;
 }
 
 .flex {
@@ -73,11 +78,20 @@ button {
     width: 90%;
     padding: 0 1.2rem;
   }
+  .divider {
+  width: calc(100% + 1.2rem + 1.2rem);
+  margin-left: -1.2rem;
+}
 }
 
 @media (max-width: 600px) {
   .container {
+    --containerpadding: 1.7rem;
     width: 98%;
-    padding: 0 1.2rem;
+    padding: 0 var(--containerpadding);
   }
+    .divider {
+  width: calc(100% + var(--containerpadding) + var(--containerpadding));
+  margin-left: calc(-1 * var(--containerpadding));
+}
 }
