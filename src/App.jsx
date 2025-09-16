@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Main from "./components/Main/Main";
@@ -8,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="container">
-      
       <Header />
       <Hero />
       <div className="divider" />
