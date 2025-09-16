@@ -93,5 +93,5 @@ button {
     .divider {
   width: calc(100% + var(--containerpadding) + var(--containerpadding));
   margin-left: calc(-1 * var(--containerpadding));
-}
+  }
 }
