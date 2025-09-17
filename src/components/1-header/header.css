@@ -86,8 +86,9 @@ header .icon-clear:hover {
 header .fixed {
     position: fixed;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.822);
+    background-color: rgba(0, 0, 0, 0.377);
     z-index: 10;
+    backdrop-filter: blur(4px);
 }
 
 
