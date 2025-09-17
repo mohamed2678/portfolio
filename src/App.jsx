@@ -1,8 +1,8 @@
-import Hero from "./components/Hero/Hero.jsx";
-import Header from "./components/Header/Header.jsx";
-import Main from "./components/Main/Main.jsx";
-import Contact from "./components/Contact/Contact.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Hero from "./components/2-hero/Hero.jsx";
+import Header from "./components/1-header/Header.jsx";
+import Main from "./components/3-main/Main.jsx";
+import Contact from "./components/4-contact/Contact.jsx";
+import Footer from "./components/5-footer/Footer.jsx";
 
 function App() {
   return (
