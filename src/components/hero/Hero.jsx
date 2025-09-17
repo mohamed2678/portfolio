@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./hero.css";
 
 function Hero() {
@@ -6,7 +6,7 @@ function Hero() {
     <section className="hero flex">
       <div className="left-section">
         <div className="parent-avatar">
-          <img src="./a (138).jpg" className="avatar" alt="my-photo" />
+          <img src="./a (153).png" className="avatar" alt="my-photo" />
           <span className="icon-verified" />
         </div>
         <h1 className="title">software developer, & forntend developer</h1>
