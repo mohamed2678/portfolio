@@ -17,10 +17,18 @@ function Hero() {
           and improve my skills.
         </p>
         <div className="all-icons flex">
-          <a href="#" target="_blank"><div className="icon icon-social-linkedin" /></a>
-          <a href="#" target="_blank"><div className="icon icon-facebook" /></a>
-          <a href="#" target="_blank"><div className="icon icon-github" /></a>
-          <a href="#" target="_blank"><div className="icon icon-instagram" /></a>
+          <a href="#" target="_blank">
+            <div className="icon icon-social-linkedin" />
+          </a>
+          <a href="#" target="_blank">
+            <div className="icon icon-facebook" />
+          </a>
+          <a href="#" target="_blank">
+            <div className="icon icon-github" />
+          </a>
+          <a href="#" target="_blank">
+            <div className="icon icon-instagram" />
+          </a>
         </div>
       </div>
       <div className="right-section animation">animation</div>

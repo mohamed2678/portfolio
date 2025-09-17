@@ -2,13 +2,15 @@ import React from "react";
 import "./header.css";
 
 function Header() {
-
   const [shoMoadl, setShowModal] = React.useState(false);
   return (
     <header className="flex">
-      <button onClick={() => {
-        setShowModal(!shoMoadl)
-      }} className="menu flex icon-menu" />
+      <button
+        onClick={() => {
+          setShowModal(!shoMoadl);
+        }}
+        className="menu flex icon-menu"
+      />
       <div />
 
       <nav>
@@ -35,10 +37,15 @@ function Header() {
         <span className="icon-moon-o" />
       </button>
 
-  {shoMoadl && (
-          <div className="fixed">
+      {shoMoadl && (
+        <div className="fixed">
           <ul className="model">
-          <li><button className="icon-clear" onClick={() => setShowModal(false)} /></li>
+            <li>
+              <button
+                className="icon-clear"
+                onClick={() => setShowModal(false)}
+              />
+            </li>
             <li>
               <a href="">About</a>
             </li>
@@ -55,8 +62,8 @@ function Header() {
               <a href="">Contact</a>
             </li>
           </ul>
-      </div>
-  )}
+        </div>
+      )}
     </header>
   );
 }
