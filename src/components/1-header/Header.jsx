@@ -1,8 +1,11 @@
 import React from "react";
 import "./header.css";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 function Header() {
   const [shoMoadl, setShowModal] = React.useState(false);
+  // route 
+  const location = useLocation();
   return (
     <header className="flex">
       <button
@@ -16,7 +19,7 @@ function Header() {
       <nav>
         <ul className="flex">
           <li>
-            <a href="">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
             <a href="">Articles</a>
@@ -47,7 +50,7 @@ function Header() {
               />
             </li>
             <li>
-              <a href="">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
               <a href="">Articles</a>
