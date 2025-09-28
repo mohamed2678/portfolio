@@ -1,0 +1,124 @@
+
+
+
+
+main.flex {
+    gap: 2.6rem;
+    align-items: start;
+}
+
+/* left sec */
+main section.left-section.flex {
+    flex-direction: column;
+    gap: 10px;  
+}
+main section.left-section.flex button {
+    background-color: rgba(36, 37, 46, 1);
+    width: 11rem;
+    padding: 0.76rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}  
+main section.left-section.flex button.active {
+    opacity: 1;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    padding: 0.8rem 0;
+    border: 1px solid var(--blue);
+}
+
+main section.left-section.flex button:hover {
+    opacity: 1;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    border-color: var(--blue); 
+}
+
+
+
+/* right sec */
+main section.right-section {
+    /* flex-grow: 1; */
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+
+.card {
+    border: 1px solid rgba(93, 188, 252, 0.3);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(36, 37, 46, 0.8), rgba(36, 37, 46, 0.8)), url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+}
+
+.card:hover {
+    box-shadow: var(--shadowG);
+    transform: translateY(-10px);
+    border: 1px solid var(--blue);
+    rotate: 1deg;
+    cursor: pointer;
+}
+
+.card img{
+    border-radius: 5px;
+}
+
+.card .box {
+    padding: 1rem 0.4rem;
+}
+
+.card .box .title {
+  color: var(--title);
+}
+
+.card .box .subTitle {
+    color: var(--subTitle);
+    font-size: 0.8rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.card .box .icons {
+    justify-content: space-between;
+}
+
+.card .icon-github, .card .icon-link {
+    font-size: 1.2rem;
+    color: var(--subTitle);
+    transition: all 0.3s ease;
+}
+
+.card .icon-github:hover, .card .icon-link:hover {
+    color: var(--blue);
+    cursor: pointer;
+    scale: 1.2;
+}
+.card a.link {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-right: 12px;
+}
+
+@media (max-width: 600px) {
+    main.flex {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+    main section.left-section.flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        }
+        main section.left-section.flex button{
+            width: 8rem;
+        }
+}
